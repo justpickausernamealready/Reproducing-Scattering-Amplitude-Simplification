@@ -84,7 +84,7 @@ class HomeScreen(tk.Tk):
             foreground=[("active", "#ECF0F1")]
         )
 
-        # 4. Create the Button using your new style
+        #Create the Button using your new style
         btn1 = ttk.Button(button_frame, text="Test Trasnformer", style="CustomButton.TButton" , command= lambda: self.handle_option_1() )
         btn2 = ttk.Button(button_frame, text="Pending....", style="CustomButton.TButton", command= lambda: self.handle_option_2())
         btn3 = ttk.Button(button_frame, text="Pending....", style="CustomButton.TButton",  command= lambda: self.handle_option_2())
@@ -99,6 +99,8 @@ class HomeScreen(tk.Tk):
         btn5.grid(row=0, column=4, padx=10, pady=10)
         
     # -------------------- Menu Command Methods --------------------
+
+    # These correspond to the menu bars that are located in the top left of your macbook screen
     def new_file(self):
         messagebox.showinfo("New File", "Create a new file...")
 
